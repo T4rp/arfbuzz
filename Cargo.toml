@@ -3,4 +3,12 @@ name = "arfbuzz"
 version = "0.1.0"
 edition = "2024"
 
+[[example]]
+name = "using"
+path = "examples/using.rs"
+
 [dependencies]
+
+[build-dependencies]
+cmake = "0.1"
+bindgen = "0.72.1"
