@@ -5,3 +5,5 @@
 pub mod harfbuzz {
     include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 }
+
+pub mod freetype;

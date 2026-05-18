@@ -9,7 +9,7 @@ fn main() {
 
     let harfbuzz_dst = Config::new("harfbuzz")
         .define("BUILD_SHARED_LIBS", "FALSE")
-        .define("HAVE_FREETYPE", "TRUE")
+        .define("HB_HAVE_FREETYPE", "TRUE")
         .build();
 
     println!("cargo::rerun-if-changed=build.rs");
