@@ -8,8 +8,11 @@ name = "using"
 path = "examples/using.rs"
 
 [dependencies]
-paidtype = { git = "https://github.com/T4rp/paidtype2" }
+paidtype = { git = "https://github.com/T4rp/paidtype2",  optional = true }
 
 [build-dependencies]
 cmake = "0.1"
 bindgen = "0.72.1"
+
+[features]
+freetype = ["dep:paidtype"]
